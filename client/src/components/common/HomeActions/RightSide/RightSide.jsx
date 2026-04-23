@@ -12,7 +12,7 @@ import { usePopup } from '../../../../lib/popup';
 import selectors from '../../../../selectors';
 import entryActions from '../../../../entry-actions';
 import SelectOrderStep from './SelectOrderStep';
-
+import { ProjectOrderIcons } from '../../../../constants/Icons';
 import styles from './RightSide.module.scss';
 
 const RightSide = React.memo(() => {
