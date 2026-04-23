@@ -52,25 +52,6 @@ const GeneralPane = React.memo(() => {
           <EditInformation />
           <Divider horizontal section>
             <Header as="h4">
-              {t('common.display', {
-                context: 'title',
-              })}
-            </Header>
-          </Divider>
-        </>
-      )}
-      <Radio
-        toggle
-        name="isHidden"
-        checked={project.isHidden}
-        label={t('common.hideFromProjectListAndFavorites')}
-        className={styles.radio}
-        onChange={handleToggleChange}
-      />
-      {canEdit && (
-        <>
-          <Divider horizontal section>
-            <Header as="h4">
               {t('common.dangerZone', {
                 context: 'title',
               })}

@@ -44,7 +44,7 @@ const GroupedProjectsView = React.memo(() => {
 
   return (
     <>
-      {[/*ProjectGroups.MY_OWN,*/ ProjectGroups.TEAM].map(
+      {[ProjectGroups.SHARED_WITH_ME, ProjectGroups.TEAM].map(
         (group) =>
           (projectIdsByGroup[group].length > 0 || canAdd) && (
             <Projects
