@@ -42,7 +42,7 @@ const ActionsStep = React.memo(({ onClose }) => {
 
     return {
       withSubscribe: isMember, // TODO: rename?
-      withCustomFieldGroups: isEditor,
+      withCustomFieldGroups: false,
       withTrashEmptier: board.context === BoardContexts.TRASH && (isManager || isEditor),
     };
   }, shallowEqual);

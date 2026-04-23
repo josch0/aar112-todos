@@ -179,18 +179,20 @@ const AddCard = React.memo(({ isOpened, className, onCreate, onClose }) => {
           content={t('action.addCard')}
           className={styles.button}
         />
-        <SelectCardTypePopup defaultValue={data.type} onSelect={handleTypeSelect}>
-          <Button
-            {...clickAwayProps} // eslint-disable-line react/jsx-props-no-spreading
-            ref={handleSelectTypeButtonRef}
-            type="button"
-            disabled={limitTypesToDefaultOne}
-            className={classNames(styles.button, styles.selectTypeButton)}
-          >
-            <Icon name={CardTypeIcons[data.type]} className={styles.selectTypeButtonIcon} />
-            {t(`common.${data.type}`)}
-          </Button>
-        </SelectCardTypePopup>
+        { false && (
+          <SelectCardTypePopup defaultValue={data.type} onSelect={handleTypeSelect}>
+            <Button
+              {...clickAwayProps} // eslint-disable-line react/jsx-props-no-spreading
+              ref={handleSelectTypeButtonRef}
+              type="button"
+              disabled={limitTypesToDefaultOne}
+              className={classNames(styles.button, styles.selectTypeButton)}
+            >
+              <Icon name={CardTypeIcons[data.type]} className={styles.selectTypeButtonIcon} />
+              {t(`common.${data.type}`)}
+            </Button>
+          </SelectCardTypePopup>
+        )}
       </div>
     </Form>
   );

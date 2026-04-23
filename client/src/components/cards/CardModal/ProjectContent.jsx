@@ -123,7 +123,7 @@ const ProjectContent = React.memo(() => {
       canEditName: isEditor,
       canEditDescription: isEditor,
       canEditDueDate: isEditor,
-      canEditStopwatch: isEditor,
+      canEditStopwatch: false,
       canSubscribe: isMember,
       canJoin: isEditor,
       canDuplicate: isEditor,
@@ -136,7 +136,7 @@ const ProjectContent = React.memo(() => {
       canUseLabels: isEditor,
       canAddTaskList: isEditor,
       canAddAttachment: isEditor,
-      canAddCustomFieldGroup: isEditor,
+      canAddCustomFieldGroup: false,
     };
   }, shallowEqual);
 

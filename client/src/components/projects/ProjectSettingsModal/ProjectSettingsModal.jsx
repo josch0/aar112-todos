@@ -58,12 +58,6 @@ const ProjectSettingsModal = React.memo(() => {
         }),
         render: () => <BackgroundPane />,
       },
-      {
-        menuItem: t('common.baseCustomFields', {
-          context: 'title',
-        }),
-        render: () => <BaseCustomFieldGroupsPane />,
-      },
     );
   }
 

@@ -46,7 +46,7 @@ const MoreActionsStep = React.memo(({ onClose }) => {
     }
 
     return {
-      canEditType: isEditor,
+      canEditType: false,
       canDuplicate: isEditor,
       canMove: isEditor,
     };
