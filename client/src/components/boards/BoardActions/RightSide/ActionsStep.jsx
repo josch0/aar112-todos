@@ -135,7 +135,7 @@ const ActionsStep = React.memo(({ onClose }) => {
           )}
           <Menu.Item className={styles.menuItem} onClick={handleActivitiesClick}>
             <Icon name="list ul" className={styles.menuItemIcon} />
-            {t('common.actions', {
+            {t('common.protocol', {
               context: 'title',
             })}
           </Menu.Item>

@@ -20,6 +20,7 @@ export default {
 
   translation: {
     common: {
+      protocol: 'Protokoll',
       aboutApp_title: 'Über die App',
       aboutPlanka_title: 'Über PLANKA',
       accessToken: 'Zugriffstoken',
@@ -35,7 +36,7 @@ export default {
       addTaskList_title: 'Aufgaben hinzufügen',
       addUser_title: 'Benutzer hinzufügen',
       admin: 'Administrator',
-      administration: 'Verwaltung',
+      administration: 'Administration',
       all: 'Alle',
       allChangesWillBeAutomaticallySavedAfterConnectionRestored:
         'Alle Änderungen werden automatisch gespeichert, sobald die Verbindung wiederhergestellt wurde.',
@@ -160,7 +161,7 @@ export default {
       customField_title: 'Feldgruppe',
       customFields_title: 'Feldgruppen',
       customerPanel_title: 'Kundenpanel',
-      dangerZone_title: 'Gefahrenbereich',
+      dangerZone_title: 'Weitere Aktionen',
       discoverPlankaPro: '✨ Mehr Features für eure Boards: PLANKA Pro entdecken',
       discoverPlankaPro_title: 'PLANKA Pro entdecken',
       dismissProBannerFor30Days: 'Für 30 Tage schließen',
@@ -214,8 +215,8 @@ export default {
       editStopwatch_title: 'Stoppuhr bearbeiten',
       editType_title: 'Typ ändern',
       editUsername_title: 'Benutzername ändern',
-      editor: 'Verwalter',
-      editors: 'Verwalter',
+      editor: 'Bearbeiter',
+      editors: 'Bearbeiter',
       email: 'E-mail',
       emptyTrash_title: 'Papierkorb leeren',
       enterCardTitle: 'Kartentitel eingeben...',
