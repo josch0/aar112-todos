@@ -22,7 +22,7 @@ const Fixed = React.memo(() => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Favorites />
+
       {projectId === undefined && <HomeActions />}
       {projectId && <Project />}
       {board && !board.isFetching && <BoardActions />}

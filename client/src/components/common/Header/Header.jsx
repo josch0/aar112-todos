@@ -120,18 +120,7 @@ const Header = React.memo(() => {
           </Menu.Menu>
         )}
         <Menu.Menu position="right">
-          {withFavoritesToggler && (
-            <Menu.Item
-              className={classNames(styles.item, styles.itemHoverable)}
-              onClick={handleToggleFavoritesClick}
-            >
-              <Icon
-                fitted
-                name={isFavoritesEnabled ? 'star' : 'star outline'}
-                className={classNames(isFavoritesEnabled && styles.itemIconEnabled)}
-              />
-            </Menu.Item>
-          )}
+
           {withEditModeToggler && (
             <Menu.Item
               className={classNames(styles.item, styles.itemHoverable)}

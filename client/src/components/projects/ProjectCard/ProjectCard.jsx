@@ -70,15 +70,8 @@ const ProjectCard = React.memo(
       return backgroundImage.thumbnailUrls.outside360;
     });
 
-    const dispatch = useDispatch();
 
-    const handleToggleFavoriteClick = useCallback(() => {
-      dispatch(
-        entryActions.updateProject(project.id, {
-          isFavorite: !project.isFavorite,
-        }),
-      );
-    }, [project, dispatch]);
+
 
     const withSidebar = withTypeIndicator || (withFavoriteButton && !project.isHidden);
 
@@ -147,21 +140,7 @@ const ProjectCard = React.memo(
             </div>
           )}
         </Link>
-        {withFavoriteButton && !project.isHidden && (
-          <Button
-            className={classNames(
-              styles.favoriteButton,
-              !project.isFavorite && styles.favoriteButtonAppearable,
-            )}
-            onClick={handleToggleFavoriteClick}
-          >
-            <Icon
-              fitted
-              name={project.isFavorite ? 'star' : 'star outline'}
-              className={classNames(styles.icon, styles.favoriteButtonIcon)}
-            />
-          </Button>
-        )}
+
       </div>
     );
   },
