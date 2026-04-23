@@ -3,16 +3,16 @@ name: Build and Push Docker Nightly Image
 on:
   push:
     paths-ignore:
-      - '.github/**'
-      - 'charts/**'
-      - 'docker-*.yml'
-      - '*.md'
-    branches: [master]
+      - ".github/**"
+      - "charts/**"
+      - "docker-*.yml"
+      - "*.md"
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
   build-and-push-docker-nightly-image:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -23,8 +23,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "22"
+          cache: "npm"
 
       - name: Update version with build number
         run: |

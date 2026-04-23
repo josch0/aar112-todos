@@ -2,11 +2,11 @@ name: Build and Push Docker Image
 
 on:
   release:
-    types: [created]
+    types: [ created ]
 
 jobs:
   build-and-push-docker-image:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -15,8 +15,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "22"
+          cache: "npm"
 
       - name: Install client dependencies
         run: npm install --omit=dev

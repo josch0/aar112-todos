@@ -14,14 +14,14 @@ import { ProjectGroupIcons } from '../../../constants/Icons';
 import Projects from './Projects';
 
 const TITLE_BY_GROUP = {
-  [ProjectGroups.MY_OWN]: 'common.myOwn',
+  //[ProjectGroups.MY_OWN]: 'common.myOwn',
   [ProjectGroups.TEAM]: 'common.team',
   [ProjectGroups.SHARED_WITH_ME]: 'common.sharedWithMe',
   [ProjectGroups.OTHERS]: 'common.others',
 };
 
 const DEFAULT_TYPE_BY_GROUP = {
-  [ProjectGroups.MY_OWN]: ProjectTypes.PRIVATE,
+  //[ProjectGroups.MY_OWN]: ProjectTypes.PRIVATE,
   [ProjectGroups.TEAM]: ProjectTypes.SHARED,
 };
 
@@ -44,7 +44,7 @@ const GroupedProjectsView = React.memo(() => {
 
   return (
     <>
-      {[ProjectGroups.MY_OWN, ProjectGroups.TEAM].map(
+      {[/*ProjectGroups.MY_OWN,*/ ProjectGroups.TEAM].map(
         (group) =>
           (projectIdsByGroup[group].length > 0 || canAdd) && (
             <Projects

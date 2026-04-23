@@ -141,12 +141,14 @@ const AddProjectModal = React.memo(() => {
             loading={isSubmitting}
             disabled={isSubmitting}
           />
-          <SelectTypePopup value={data.type} onSelect={handleTypeSelect}>
-            <Button type="button" className={styles.selectTypeButton}>
-              <Icon name={ProjectTypeIcons[data.type]} className={styles.selectTypeButtonIcon} />
-              {t(`common.${data.type}`)}
-            </Button>
-          </SelectTypePopup>
+          { false &&
+            <SelectTypePopup value={data.type} onSelect={handleTypeSelect}>
+              <Button type="button" className={styles.selectTypeButton}>
+                <Icon name={ProjectTypeIcons[data.type]} className={styles.selectTypeButtonIcon} />
+                {t(`common.${data.type}`)}
+              </Button>
+            </SelectTypePopup>
+          }
         </Form>
       </ClosableModal.Content>
     </ClosableModal>
