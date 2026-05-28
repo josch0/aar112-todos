@@ -29,7 +29,7 @@ export default {
       goBack: 'Zurück gehen',
       goHome: 'Zur Startseite',
       logIn: 'Einloggen',
-      logInWithSso: 'Einloggen mit Cloud-Benutzer',
+      logInWithSso: 'Einloggen mit Cloudbenutzer',
     },
   },
 };

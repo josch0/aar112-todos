@@ -22,7 +22,7 @@ export default {
     common: {
       protocol: 'Protokoll',
       aboutApp_title: 'Über die App',
-      aboutPlanka_title: 'Über PLANKA',
+      aboutPlanka_title: 'Über Planner',
       accessToken: 'Zugriffstoken',
       account: 'Konto',
       actions: 'Aktionen',
