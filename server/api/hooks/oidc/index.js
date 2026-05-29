@@ -65,6 +65,7 @@ module.exports = function defineOidcHook(sails) {
           client_id: sails.config.custom.oidcClientId,
           client_secret: sails.config.custom.oidcClientSecret,
           redirect_uris: [sails.config.custom.oidcRedirectUri],
+          post_logout_redirect_uris: [sails.config.custom.oidcPostLogoutRedirectUri],
           response_types: ['code'],
           userinfo_signed_response_alg: sails.config.custom.oidcUserinfoSignedResponseAlg,
         };

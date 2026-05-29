@@ -102,6 +102,10 @@ module.exports.custom = {
     sails.config.environment === 'production' ? baseUrl : 'http://localhost:3000'
   }/oidc-callback`,
 
+  oidcPostLogoutRedirectUri: `${
+    sails.config.environment === 'production' ? baseUrl : 'http://localhost:3000'
+  }/`,
+
   smtpHost: process.env.SMTP_HOST,
   smtpPort: process.env.SMTP_PORT || 587,
   smtpName: process.env.SMTP_NAME,
